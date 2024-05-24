@@ -1,0 +1,144 @@
+Neste vídeo nós vimos na prática como dizer que um Funcionario é uma Pessoa e também que um Titular é uma Pessoa.
+
+Essa realação é dada através da sintaxe class Funcionario : public Pessoa. Repare no uso de : public neste local.
+
+O uso de : indica que tudo que existe em Pessoa passará a existir também em Funcionario. É como se Funcionario 
+herdasse todos os membros.
+
+Por isso o nome deste conceito é Herança. Vamos falar muito mais sobre isso neste treinamento, mas é válido dizer 
+desde já que a Herança é um dos pilares da orientação a objetos, e por isso é importante que entendamos bem seu 
+funcionamento.
+
+private: // somente a classe Pessoa pode acessar, nem mesmo as herdadas
+protected: mantem protegido de acesso externos, mas os herdeiros podem acessar
+
+abstração, encapsulamento, Herança: especialização de determinados tipos.
+
+Agora que já entendemos sobre herança e conhecemos o modificador protected, podemos falar sobre os tipos de 
+herança: Pública, protegida e privada.
+
+Repare, novamente, na sintaxe utilizada para realizar herança:
+
+class Funcionario : public Pessoa
+{
+…
+};
+
+Discutimos anteriormente o que significa o uso do : nesse contexto. E o uso de public aqui informa que 
+tudo que é público na classe Pessoa permanecerá público na classe Funcionario.
+
+Se fizéssemos class Funcionario : protected Pessoa, tudo que na classe Pessoa é público, se torna 
+protegido (protected) na classe Funcionario.
+
+E como você já deve imaginar, se fizermos class Funcionario : private Pessoa, todos os membros públicos 
+e protegidos em Pessoa se tornam privados em Funcionario.
+
+Um detalhe a mais, que gera bastantes erros e confusões, é que ao ter uma herança privada, essa herança 
+é como se não existisse para o mundo externo. Os códigos que usam nossos tipos não vão "saber" que essa 
+herança existe. Esse é mais um motivo para esse tipo de herança ser bastante raro.
+
+É muito mais comum termos herança usando : public pois ele não altera nada, mas é importante conhecer 
+os demais tipos.
+
+Também é válido ressaltar que os membros privados continuam existindo na classe Funcionario, mas não 
+são acessíveis. Somente através de métodos públicos e protegidos nós podemos acessar os membros definidos 
+como privados em Pessoa.
+
+Diagrama de classes(UMl)
+ - classe base e derivada
+ - extends: derivado de Pessoa, é uma Pessoa que acessar os dados
+ -  # protegido
+ -  - privado
+ -  + publico
+ - herança genetica, extensão de dados
+
+Porque antes da classe derivada ser inicializada, ela depende da inicialização da classe base.
+
+Operador Tenário:
+    Quando precisamos atribuir um valor a uma variável dependendo de uma condição, um if 
+    não é necessário. Podemos escrever isso a partir do operador ternário.
+
+    Sua sintaxe é a seguinte:
+    tipo variavelADefinir = condicao ? valorSeVerdadeiro : valorSeFalso
+
+    Sendo assim, o seguinte if:
+    float taxa;
+    if (tipoConta == 1) {
+        taxa = 0.05;
+    } else {
+        taxa = 0.03;
+    }
+
+    Pode ser reescrito assim:
+    float taxa = tipoConta == 1 ? 0.05 : 0.03;
+
+Porque ContaPoupanca herda de Conta, logo, ContaPoupanca é uma Conta.
+Entendemos melhor os conceitos por trás da herança em OO
+Aprendemos a acessar membros da classe base
+Vimos sobre ordem de chamada de construtores e destrutores
+Vimos como evitar múltiplos IFs com OO.
+
+virtual: definido na classe base ou nas filhas
+ - tomada de decisao no tempo de execução piora a perfomance
+ - pode ser subcrito nas classes base
+ - c++ te dar o controle, pode ou nao sobrescrito 
+ - A decisão sobre qual método chamar não é mais tomada pelo linker e sim pelo código em tempo de execução.
+ - um membro é adicionado, ponteiro, estrutura
+ - evitar se perfomance for o foco
+ - Essa forma, um membro extra é adicionado para o que conhecemos como vtable. A partir da vtable 
+   contida no objeto o programa sabe qual método chamar.
+
+
+
+override: diz que o método é virtual de uma classe, nome do metodo, tipo de dado
+ - Para verificar se a assinatura bate com algum método virtual da classe base
+ - sobrescrevendo algum método e não sobrecarregando ou criando outro completamente diferente.
+
+Em cenários onde um objeto da classe derivada é referenciado como o tipo base (se ContaPoupanca for 
+referenciado como Conta, por exemplo), se o destrutor não for virtual, apenas o destrutor da classe base 
+será chamado, o que pode ocasionar problemas.
+
+O objeto do tipo ContaPoupanca possui um ponteiro para uma vtable que contém o endereço do método correto.
+
+O método puramente virtual gera uma obrigação de implementação. As classes filhas serão obrigadas a 
+implementá-lo.
+
+classe abstrata em c++ possui 1 ou mais metodo puramente virtual
+ - metodos que agem em difentes tipos de classes herdeiras
+
+heranca serve para reutilizar código.
+
+Polimorfismo: herança ajuda nisso, o mesmo pode ser referenciado de várias formas
+ - Conta* ponterio = new ContaPoupanca ou corrente() -> referenciar o obejto de varias formas
+ - proprio tipo dele ou tipo generico do objeto
+ - utilizar tipos genericos sempre que possivel
+ - Quando temos várias especializações de algum tipo que queremos manipular
+ - Nossa função RealizaSaque não quer saber se vamos sacar de conta poupança, corrente, digital, universitária, 
+    etc. Para ela, tudo que importa é que haja um método sacar. Por isso ela vai se referir ao objeto que ela 
+    recebe por parâmetro como Conta. Já um gerenciador de transferências precisaria usar ContaCorrente.
+
+herança multipla: herda atributos de diferentes classes como Titular
+
+Funcionario é um tipo abstrato, nao pode ser intaciado
+
+Se em uma função nós não modificamos nada do parâmetro e apenas chamamos seus métodos marcados como 
+const, então o parâmetro pode ser const.
+
+herança multipla
+ - problema diamante
+ - dois construtores são chamados
+ - dois metodos iguais podem ser chamados
+ - variavel.B::metodo()
+ - herança virtual struct A, struct B : virtual A, struct C : virtual A, struct D : B, C
+ - A   A   usando metodo puramente virtual no a, b e c, com a implementação no D com o override
+   B   C
+     D
+ - Quando em toda a hierarquia houver algum método sendo herdado em duplicidade desnecessariamente
+ - Se uma classe estenderá 2 outras que por sua vez herdam de uma em comum, haverá duplicidade nos 
+    membros públicos. A herança virtual impede essa duplicidade armazenando uma estrutura similar a 
+    vtable que conhecemos nos métodos virtuais.
+
+classe pura: classe puramente virtual: so metodos virtual, 
+ - interface para permitir o Polimorfismo
+
+Organizar em namespace
