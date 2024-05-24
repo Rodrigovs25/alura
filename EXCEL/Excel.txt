@@ -1,0 +1,50 @@
+F2 -> abrir a celula para a escrita
+ESC -> sair da celula e deleta a informação nela
+ENTER -> salva a celula
+
+Se você é um usuário frequente do Excel, é bastante provável que já esteja familiarizado com o uso das funções PROCV, PROCH e CORRESP. Afinal, essas funções são amplamente populares entre os usuários do Excel. Entretanto, em um futuro próximo, é possível que essas funções não sejam tão predominantes e, até mesmo, substituídas.
+
+Isso porque a Microsoft aprimorou o Excel, introduzindo duas novas funções no Office 365, a PROCX e CORRESPX, que vieram para decretar o fim destas funções tradicionais, melhorando a manipulação e análise de grandes conjuntos de dados.
+
+Frequentemente, ao lidar com conjuntos extensos de dados no Excel, surge a necessidade de localizar um item específico em uma matriz ou intervalo de células e obter a posição relativa deste item. Apesar da existência de funções como PROCV, PROCH e CORRESP, que podem desempenhar essas tarefas, elas apresentam certas limitações. E é nesse cenário que as funções PROCX e CORRESPX entram em cena.
+
+A função PROCX, além de sua natureza dinâmica, a coluna de referência não precisa necessariamente estar à esquerda, possibilita buscas em qualquer direção, de cima para baixo, de baixo para cima e se houver necessidade de adicionar ou remover uma coluna na tabela, a função PROCX não será afetada, algo que as funções PROCV e PROCH não conseguem realizar.
+
+Já a função CORRESPX, oferece a mesma praticidade da função CORRESP que já conhecemos, porém com algumas adições úteis, como a capacidade de procurar em ordem crescente ou decrescente, além da possibilidade de utilizar caracteres coringa.
+
+Agora que entendemos a origem dessas funções, vamos explorá-las na prática.
+
+Função PROCX
+Primeiramente, veremos quais são os parâmetros da PROCX para entender como a função funciona:
+
+Produtos	Estoque	Preço Unitário
+Bermuda	48	R$ 65,90
+Bolsa	36	R$ 145,00
+Boné	23	R$ 39,90
+Calça Jeans	24	R$ 85,90
+Camiseta Lisa	46	R$ 25,90
+Cinto	2	R$49,90
+Jaqueta Jeans	49	R$ 249,90
+Óculos	45	R$ 120,00
+Tênis	37	R$ 249,90
+Vestido	43	R$ 89,90
+Saia	35	R$ 49,90
+Sandália	48	R$ 89,90
+Calça Alfaiataria	40	R$ 180,00
+Como podemos verificar na imagem acima, na função PROCX, em vez de informar o intervalo da tabela e o número da coluna como na função PROCV, precisamos informar como parâmetros, os intervalos de procura e de retorno do valor respectivamente.
+
+Além disso, diferente das funções PROCV e PROCH, na função PROCX temos a adição de três novos parâmetros opcionais, o primeiro para exibir uma mensagem quando uma correspondência válida não é encontrada, o segundo para saber o modo de correspondência, podendo ser exata (0), próximo item menor (-1), próximo item maior (1) e realizar a pesquisa utilizando caracteres curinga (2) e o terceiro para escolher o modo de pesquisa, permitindo escolher se a busca será de cima para baixo ou de baixo para cima.
+
+Banner da Imersão Phyton: Inscreva-se gratuitamente na Imersão Phyton da Alura e mergulhe em análise de dados!
+Função CORRESPX
+Agora veremos quais são os parâmetros da CORRESPX para entender como a função funciona.
+
+Captura de tela da planilha Dados Produtos representando as tabelas Produtos/Estoque e Produto/Posição, além da célua E4, preenchida com uma fórmula do excel. Uma seta azul liga a célula D7 "Jaqueta jeans" ao parâmetro "pesquisa valor". Uma seta vermelha liga a célula A16 "Calça Alfaiataria" ao parâmetro "pesquisa_matriz". Uma seta preta liga o valor "0" da célula E4 e o parâmetro "modo_correspondência" a uma caixa de seleção com os valores "0 - Correspondência exata", "-1 - Correspondência exata ou próximo item menor", "1 - Correspondência exata ou próximo item maior", "2 - Correspondência de caractere coringa.".
+Como podemos verificar na imagem acima, a função CORRESPX é uma evolução da função CORRESP, sendo também utilizada para procurar um item específico em uma matriz ou intervalo de células e, em seguida, retornar a posição desse item no intervalo.
+
+Diferente da função CORRESP, a função CORRESPX possui algumas melhorias significativas, como definir a ordem de pesquisa, do primeiro ao último, do último ao primeiro ou pesquisa binária e especificar o tipo de correspondência, podendo ser exata (0), próximo item menor (-1), próximo item maior (1) e realizar a pesquisa utilizando caracteres curinga (2).
+
+Concluindo as vantagens
+Podemos observar que as "Funções X" representam um avanço no modo de abordar o uso do Excel, destacando uma das vantagens de uma ferramenta tão poderosa, versátil e duradoura: a capacidade de evolução contínua, impulsionada pelo feedback dos usuários e ao longo do tempo. Isso reflete a natureza em constante aprimoramento das funções, semelhante ao próprio Excel.
+
+Por fim, convido você a conhecer nossa formação em Excel aqui na Alura, uma formação Formação Excel que te ensina desde os primeiros passos nessa poderosa ferramenta até os passos mais elaborados para você tirar de letra tudo sobre como construir gráficos, entender funções, utilizar as funções PROCX/CORRESPX - aprender VBA e muitas outras funcionalidades extremamente úteis para o mercado de trabalho atual e futuro.
