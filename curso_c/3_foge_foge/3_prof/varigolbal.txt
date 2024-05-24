@@ -1,0 +1,3 @@
+Variáveis declaradas como globais são globais para todo o programa. Mas, para que um arquivo enxergue uma variável global definida em outro arquivo, precisamos fazer uso da palavra extern.
+
+Imagine, por exemplo, uma variável int n; for definida no arquivo a.c. Para usarmos a mesma variável no arquivo b.c, precisaríamos redeclara-la com extern int n;. Agora sim, a variável n, global, é visível por ambos arquivos. Repare que só um arquivo a realmente declara, e os outros deixam claro que ela é "externa".

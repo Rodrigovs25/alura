@@ -1,0 +1,27 @@
+g++ --version
+cd C:\Users\rodri\OneDrive\Documentos\alura\curso_c
+dir
+
+gcc teste.c -o teste.exe
+teste.exe //.exe no windows e .out no linux
+
+cat teste.c -> imprimir o codigo na tela
+
+gcc teste.c -o teste.out
+./teste.out -> linux
+
+ctrl+b -> compilar no sublime text
+C/C++ Compile Run -> compliar no vscode
+
+virgula ou paratenses no fim da linha
+
+pwd e ls
+
+rm programa.exe -> apagar o programa
+mv programa.c adivinhacao.c -> mudar o nome do programa
+
+\n -> enter
+
+tipos int(4 bytes - 32 bits), double(8 bytes - 64 bits), long int(8 bytes - 64 bits), short int(2 bytes - 16 bits), float(4 bytes, 32 bits)
+
+ascii art -> desenho com letras do teclado

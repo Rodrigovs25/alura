@@ -1,0 +1,45 @@
+Usamos a função strcpy() para copiar um array para o outro. Essa função, como já explicamos, serve para copiar strings. Mas, às vezes, queremos copiar outros elementos que não são strings. Por exemplo, podemos querer uma struct inteira.
+
+Imagine o seguinte código:
+
+
+
+struct contato {
+    char nome[20];
+    char email[50];
+};
+
+typedef struct contato CONTATO;
+
+int main() {
+    CONTATO mauricio;
+    strcpy(mauricio.nome, "Mauricio Aniche");
+    strcpy(mauricio.email, "mauricio.aniche@caelum.com.br");
+}
+
+
+
+Se quiséssemos copiar a struct inteira, ao invés de copiar atributo por atributo, poderíamos fazer uso da instrução memcpy(). Como o nome já diz, ela copia o que está na memória. A assinatura dela é bem parecida com a da strcpy(), com a diferença de que, além de passar o destino e a origem, precisamos passar também a quantidade de bytes que queremos copiar.
+
+No código abaixo copiamos o contato mauricio para o contato aniche. Repare que usamos sizeof() para calcular a quantidade de bytes da struct:
+
+
+
+CONTATO aniche;
+
+memcpy(&aniche, &mauricio, sizeof(CONTATO));
+
+
+
+Outra função bastante comum quando manipulamos a memória é a função memset(). Geralmente a usamos para inicializar structs ou arrays com algum valor padrão (geralmente, "nulo"). Isso é especialmente útil, pois muitos compiladores de C não limpam as regiões de memória antes de liberá-la para o programador. Então é comum termos "lixo".
+
+Para não termos nunca o problema de ter dados sujos, podemos sempre limpar nossas structs, por exemplo:
+
+
+
+CONTATO marcelo;
+
+// 0 significa NULO
+memset(&marcelo, 0, sizeof(CONTATO));
+
+
