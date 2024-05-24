@@ -1,0 +1,93 @@
+[{
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/nao_enforcou.cpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/nao_enforcou.cpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/nao_enforcou.cpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/sorteia_palavra.hpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/sorteia_palavra.hpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/sorteia_palavra.hpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/salva_arquivo.hpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/salva_arquivo.hpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/salva_arquivo.hpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/nao_enforcou.hpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/nao_enforcou.hpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/nao_enforcou.hpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/sorteia_palavra.cpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/sorteia_palavra.cpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/sorteia_palavra.cpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/letra_existe.cpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/letra_existe.cpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/letra_existe.cpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/nao_acertou.hpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/nao_acertou.hpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/nao_acertou.hpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/Forca.cpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/Forca.cpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/Forca.cpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/letra_existe.hpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/letra_existe.hpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/letra_existe.hpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_erros.cpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_erros.cpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_erros.cpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/le_arquivo.cpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/le_arquivo.cpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/le_arquivo.cpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/adiciona_palavra.cpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/adiciona_palavra.cpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/adiciona_palavra.cpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/salva_arquivo.cpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/salva_arquivo.cpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/salva_arquivo.cpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/adiciona_palavra.hpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/adiciona_palavra.hpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/adiciona_palavra.hpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/chuta.hpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/chuta.hpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/chuta.hpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/chuta.cpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/chuta.cpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/chuta.cpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_cabecalho.cpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_cabecalho.cpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_cabecalho.cpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/nao_acertou.cpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/nao_acertou.cpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/nao_acertou.cpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_cabecalho.hpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_cabecalho.hpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_cabecalho.hpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_erros.hpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_erros.hpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_erros.hpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_palavra.cpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_palavra.cpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_palavra.cpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_palavra.hpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_palavra.hpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/imprime_palavra.hpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }, {
+  "file": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/le_arquivo.hpp",
+  "directory": "/home/rvs/alura/linguagem_c++/curso_2/Forca/Forca",
+  "command": "clang++ -c /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/le_arquivo.hpp -o /home/rvs/alura/linguagem_c++/curso_2/Forca/Forca/le_arquivo.hpp.o  -I. -I.  -gdwarf-2  -O0  -Wall"
+ }]
