@@ -1,0 +1,68 @@
+//na class tudo por padrao é privado, tem quantos modificadores de acesso quiser(public, private), como usar class, fornecer dados e compostamentos usar class
+//no struct tudo por padrao é público, só dados usa struct
+//somente dentro dessa classe que é acessível os atributos, na implementação
+
+
+//del -> deletar linhas
+//crtl + / -> barras as linhas
+
+membro: atributo ou método, pode ser privado ou publico
+ - o membro privado so pode ser acessado dentro da classe, so os metodos podem mudar
+
+Sempre é bom inicializar as variáveis.
+Para acessar o valor de algum atributo é necessário a criação de um método público.
+
+Métodos getter(mostrar o valor do atributo) e setter(modifica o valor do atributo, método de acesso)
+
+Encapsular: retringir acesso a informações, permitindo somente o necessário.
+
+const
+
+Se existe um método que n vai modifica nada na classe ele é marcado com o const.
+
+raii”, resource acquisition is initialization, mas a tradução é: A aquisição de recurso é inicialização.
+
+Construtor: é um método que vai ser intacialiado na criação de um objeto.
+ - this-> é um ponteiro uma variável que já existe por padrão, nós não precisamos 
+          criar e ela tem um ponteiro para o objeto que chamou esse método.
+
+No código umaConta.depositar(500);, dentro do método depositar, this possui o endereço de memória para o 
+objeto em umaConta. Ou seja, this é um ponteiro para o objeto em questão. Esta variável é definida automaticamente.
+
+Funções com nomes iguais e paramentros diferentes.
+
+Imutabilidade: Já o titular, o CPF e o número da conta, eles não mudam. E esse conceito é chamado de imutabilidade. Então, 
+além de inicializar recursos como alocar memória, reservar ponteiros, um construtor pode ser utilizado para esse tipo 
+de tarefa, para tornar um objeto imutável, para fazer com que ele não possa ser alterado durante o seu ciclo de vida.
+
+Listas de inicialização evitam a inicialização duplicada de objetos relacionados.
+
+Classe é planta da classe, e o objeto é a casa em si.
+
+static na classe: nao é referente ao objeto, de a toda a classe em si, global para os objetos.
+
+Membros estaticos tem de ter cuidado.
+
+Destrutor: não recebe nenhum paramentro, pois não é chamado de forma expicita, quando o objeto deixa de existe,
+ - serve para desalocar ponteiro, fecha arquivo
+ - new delete, open close
+ - quando um objeto sair do escopo
+ - se o contrustor fez algo o Destrutor deve fazer o contrário
+
+exit(numero) -> numero é o status do sistema onde:
+ - 0 = estava na hora de encerrar o programa 
+ - algum outro numero seignifica algum erro
+
+Método que só melhora o código interno, melhor privado, serve para verificar algo do próprio código.
+
+Conversão implícita é essa, se você recebe um valor que não é do seu tipo, o compilador na hora de processar esse 
+código vai procurar um construtor que receba esse tipo.
+ - o objeto ser construido sem necessariamente usar um outro construtor
+ - explicit: só pode ser construído a partir do uso do construtor, sem a conversão explicita
+ - Sendo o tipo T uma classe, se algum valor de outro tipo for usado como T e T tiver um construtor 
+   que recebe este outro tipo.
+
+new class("") -> chamar um construtor, alocar o objeto na stack se possivel, objetos grandes usa heap
+ - criar ponterio cpf* meuNumero = new Cpf("56");
+
+Evitar cópias
